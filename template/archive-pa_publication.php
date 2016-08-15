@@ -40,7 +40,7 @@
 				echo '<i>'.$authors.'</i>';
 			?>
 
-			<?php the_content(); ?>
+			<?php wp_strip_all_tags( get_the_content() ); ?>
 
 			<p>
 				<?php
